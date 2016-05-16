@@ -1,0 +1,334 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    title Document
+    link(href='http://fonts.googleapis.com/css?family=Ubuntu', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="css/adapt.css")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js")
+    script(src="js/script.js")
+  body
+    #top-arrow
+      div НАВЕРХ
+    #header
+      #lk-nav-wrap
+        #lk-nav
+          #lk-btn Личный кабинет
+          #cb-btn Обратный вызов
+      #head
+        .head-part
+          a(href="./index.html")
+            img#logo(src="images/logo.png", height="101", width="110", alt="Логотип А+")
+          #logo-text
+            span Центр продаж 
+            br
+            span и обслуживания 
+            br 
+            span климатического
+            br
+            span оборудования
+        .head-part
+          .basket
+            .basket-ico
+            .basket-inf
+              p
+                a(href="") Корзина:
+                span.basket-items-amount  2
+              p
+                a(href="") Сумма:
+                span.basket-sum  4500 р.
+          #extra-basket
+            #free-delivery
+              a(href="") Оформить бесплатную доставку
+            a#basket-link(href="") ПЕРЕХОД В КОРЗИНУ
+        .head-part
+          #ls-head-btns
+            #call-to-shop
+              a(href="") Позвонить в магазин
+            #call-to-service
+              a(href="") Позвонить в сервис
+          #header-contacts
+            .head-number
+              span (8452) 
+              span 988-996
+            .head-number
+              span (8452) 
+              span 69-44-22
+            .service-head
+              a(href="") Сервис
+            #cont-adress г. Саратов, Наб. Космонавтов, 7А
+    #ls-menu
+      #ls-open-menu
+        #ls-open-wrap Открыть меню
+      #ls-menu-list
+        .ls-menu-item(data-value="1")
+          a(href="") ТОВАРЫ
+        .ls-menu-item(data-value="2")
+          a(href="") ОПЛАТА И ДОСТАВКА
+        #ls-submenu1.ls-submenu
+          .ls-submenu-item
+            a(href="") Котлы и принадлежности
+          .ls-submenu-item
+            a(href="") Водонагреватели
+          .ls-submenu-item
+            a(href="") Насосы GRUNDFOS
+          .ls-submenu-item
+            a(href="") Насосы WILO
+          .ls-submenu-item
+            a(href="") Радиаторы отопления алюминиевые и биметалические
+          .ls-submenu-item
+            a(href="") Расходные материалы для монтажа
+          .ls-submenu-item
+            a(href="") Расширительные баки
+          .ls-submenu-item
+            a(href="") Электрические биде Panasonic
+          .ls-submenu-item
+            a(href="") Электрообогреватели
+        #ls-submenu2.ls-submenu
+          .ls-submenu-item
+            a(href="") Помощь
+          .ls-submenu-item
+            a(href="") Условия оплаты
+          .ls-submenu-item
+            a(href="") Условия доставки
+        .ls-menu-item
+          a(href="") ВОПРОСЫ И ОТВЕТЫ
+        .ls-menu-item
+          a(href="") ПОЛЕЗНОЕ
+        .ls-menu-item
+          a(href="") КОНТАКТЫ
+        .ls-menu-item
+          a(href="") О КОМПАНИИ
+    #nav-wrap
+      #nav
+        form#nav-search(method="post", name="search-form")
+          input(type="text", name="query", placeholder="Поиск по сайту")
+          button
+        #nav-menu-wrap
+          #nav-menu
+            ul
+              li
+                .nav-el-wrapped
+                  .nav-menu-el
+                    a(href="") Товары
+                    ul.goods-list
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Котлы и принадлежности
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Водонагреватели
+                        ul.goods-list-inner
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Инновационная техника
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Кондиционеры
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Приборы учета газа и воды
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Настенный газовый котел Protherm
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Двухконтурные газовые котлы Vaillant
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Баки для воды Aquatech
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Напольные газовые котлы Vaillant
+                          li.nav-goods-el
+                            a(href="")
+                              .goods-cat
+                                span Панельные радиаторы Vaillant
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Насосы GRUNDFOS
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Насосы WILO
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Радиаторы отопления 
+                            br 
+                            span алюминиевые и биметалические
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Расходные материалы 
+                            br 
+                            span для монтажа
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Расширительные баки
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Электрические биде Panasonic
+                      li.nav-goods-el
+                        a(href="")
+                          .goods-cat
+                            span Электрообогреватели
+              li
+                .nav-el-wrapped
+                  .nav-menu-el
+                    a(href="") Оплата и доставка
+                    ul.nav-submenu
+                      li
+                        a(href="") Помощь
+                      li
+                        a(href="") Условия оплаты
+                      li
+                        a(href="") Условия доставки
+              li
+                .nav-el-wrapped
+                  .nav-menu-el
+                    a(href="") Вопросы и ответы
+              li
+                .nav-el-wrapped
+                  .nav-menu-el
+                    a(href="") Полезное
+              li
+                .nav-el-wrapped
+                  .nav-menu-el
+                    a(href="") Контакты
+              li
+                .nav-el-wrapped
+                  .nav-menu-el
+                    a(href="") О компании
+    .basic-main
+      #crumbs
+        span
+          a(href="./index.html") Главная
+        span.seporator  > 
+        span О компании
+      .main-h О компании
+      #about-cont
+        p Фирменный салон Vaillant и Protherm занимается продажей, проектированием, качественным монтажом современных инженерных систем водоснабжения и отопления.
+        p На нашем сайте вы сможете увидеть широкий ассортимент котельного оборудования, водонагревателей, кухонного оборудования, а так же различных комплектующих и расходных материалов.
+        #partners-wrap
+          #partners
+            div
+              a(href="")
+                img(src="images/partn1.png" width=220 height=52 alt="Партнеры")
+            div
+              a(href="")
+                img(src="images/partn2.png" width=220 height=60 alt="Партнеры")
+        p Наша компания способна предложить  комплексное решение любой проблемы, связанной с установкой и монтажом отопительных систем.
+        p
+          span Учитывая особенности каждого  объекта, наши специалисты могут: 
+          br
+          span - разработать для вас индивидуальный проект систем отопления; 
+          br
+          span - подобрать и доставить отопительное оборудование; 
+          br
+          span - произвести монтаж систем отопления и провести пусконаладочные работы; 
+          br
+          span - проводить сервисное и гарантийное обслуживание вашего отопительного оборудования; 
+          br
+          span - провести консультации относительно установки отопительных систем и выбора подходящего оборудования для  дома,котеджа, дачи, предприятия.
+        p Даже с максимально сжатым бюджетом мы подберем для вас наилучший вариант отопительного оборудования, который принесет в  дом комфорт, уют, а самое главное - безопасность.
+        p Мы следим за самыми свежими мировыми тенденциями в своем сегменте рынка, работаем только с теми производителями, которые постоянно улучшают качество продукции с помощью инноваций,поэтому,  мы способны  предложить самый современный, надежный и качественный вариант отопительного оборудования для вашего дома.
+        #a-c-full
+        p Наш салон удобно расположен на Набережной космонавтов, 7А, рядом с транспортной развязкой, что обеспечивает удобный подъезд. В нашей компании работают только квалифицированные специалисты, которые индивидуально подходят к каждому клиенту. Мы стараемся в максимально короткие сроки решить поставленную вами задачу качественно и с минимальными затратами. В нашем магазине всегда проходят различные акции, и существует гибкая система скидок.
+    #article-news-wrap
+      #article-news
+        #ar-news-h Новости и акции
+        ul#ar-news-list
+          li
+            .news-item
+              .ar-news-date 11.06.2015
+              .ar-news-text В наличии новинка апреля 2015 года! Настенный котел Ягуар
+          li
+            .news-item
+              .ar-news-date 11.06.2015
+              .ar-news-text В наличии новинка апреля 2015 года! Настенный котел Ягуар
+          li
+            .news-item
+              .ar-news-date 11.06.2015
+              .ar-news-text В наличии новинка апреля 2015 года! Настенный котел Ягуар
+        #ar-news-more
+          a(href="") Все новости
+    #footer-wrap
+      #footer
+        #footer-left
+          ul.footer-menu
+            li
+              a(href="") Компания
+            li
+              a(href="") О компании
+            li
+              a(href="") Новости
+            li
+              a(href="") Услуги
+            li
+              a(href="") Контакты
+          ul.footer-menu
+            li
+              a(href="") Информация
+            li
+              a(href="") Оплата
+            li
+              a(href="") Доставка
+            li
+              a(href="") Партнеры
+            li
+              a(href="") Вопросы и ответы
+            li
+              a(href="") Полезно
+        #footer-center
+          form#footer-search(method="post", name="search-form")
+            input(type="text", name="query", placeholder="Поиск по сайту")
+            button
+          .basket
+            .basket-ico
+            .basket-inf
+              p
+                a(href="") Корзина:
+                span.basket-items-amount  2
+              p
+                a(href="") Сумма:
+                span.basket-sum  4500 р.
+        #footer-right
+          .head-number
+            span (8452) 
+            span 988-996
+          .cb-head
+              a(href="") Обратный звонок
+          .head-number
+            span (8452) 
+            span 69-44-22
+          .service-head
+              a(href="") Сервис
+        #footer-bottom
+          #copyrights
+            span Copyright © 2015 ООО «Инвест-Проект»
+            br 
+            span Центр продаж и обслуживания инженерных систем
+          #counters
+            .counter
+            .counter
+          #powered-by
+            a(href="")
+              #cherry-logo
+              #cherry-text
+                span Создание сайта
+                br
+                span Дизайн-студия Сherry

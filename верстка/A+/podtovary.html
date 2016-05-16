@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adapt.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="top-arrow">
+      <div>НАВЕРХ</div>
+    </div>
+    <div id="header">
+      <div id="lk-nav-wrap">
+        <div id="lk-nav">
+          <div id="lk-btn">Личный кабинет</div>
+          <div id="cb-btn">Обратный вызов</div>
+        </div>
+      </div>
+      <div id="head">
+        <div class="head-part"><a href="./index.html"><img id="logo" src="images/logo.png" height="101" width="110" alt="Логотип А+"></a>
+          <div id="logo-text"><span>Центр продаж </span><br><span>и обслуживания </span><br><span>климатического</span><br><span>оборудования</span></div>
+        </div>
+        <div class="head-part">
+          <div class="basket">
+            <div class="basket-ico"></div>
+            <div class="basket-inf">
+              <p><a href="">Корзина:</a><span class="basket-items-amount"> 2</span></p>
+              <p><a href="">Сумма:</a><span class="basket-sum"> 4500 р.</span></p>
+            </div>
+          </div>
+          <div id="extra-basket">
+            <div id="free-delivery"><a href=""><span>Оформить</span><br><span>бесплатную доставку</span></a></div><a id="basket-link" href="">ПЕРЕХОД В КОРЗИНУ</a>
+          </div>
+        </div>
+        <div class="head-part">
+          <div id="ls-head-btns">
+            <div id="call-to-shop"><a href="">Позвонить в магазин</a></div>
+            <div id="call-to-service"><a href="">Позвонить в сервис</a></div>
+          </div>
+          <div id="header-contacts">
+            <div class="head-number"><span>(8452) </span><span>988-996</span></div>
+            <div class="head-number"><span>(8452) </span><span>69-44-22</span></div>
+            <div class="service-head"><a href="">Сервис</a></div>
+            <div id="cont-adress">г. Саратов, Наб. Космонавтов, 7А</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ls-menu">
+      <div id="ls-open-menu">
+        <div id="ls-open-wrap">Открыть меню</div>
+      </div>
+      <div id="ls-menu-list">
+        <div data-value="1" class="ls-menu-item"><a href="">ТОВАРЫ</a></div>
+        <div data-value="2" class="ls-menu-item"><a href="">ОПЛАТА И ДОСТАВКА</a></div>
+        <div id="ls-submenu1" class="ls-submenu">
+          <div class="ls-submenu-item"><a href="">Котлы и принадлежности</a></div>
+          <div class="ls-submenu-item"><a href="">Водонагреватели</a></div>
+          <div class="ls-submenu-item"><a href="">Насосы GRUNDFOS</a></div>
+          <div class="ls-submenu-item"><a href="">Насосы WILO</a></div>
+          <div class="ls-submenu-item"><a href="">Радиаторы отопления алюминиевые и биметалические</a></div>
+          <div class="ls-submenu-item"><a href="">Расходные материалы для монтажа</a></div>
+          <div class="ls-submenu-item"><a href="">Расширительные баки</a></div>
+          <div class="ls-submenu-item"><a href="">Электрические биде Panasonic</a></div>
+          <div class="ls-submenu-item"><a href="">Электрообогреватели</a></div>
+        </div>
+        <div id="ls-submenu2" class="ls-submenu">
+          <div class="ls-submenu-item"><a href="">Помощь</a></div>
+          <div class="ls-submenu-item"><a href="">Условия оплаты</a></div>
+          <div class="ls-submenu-item"><a href="">Условия доставки</a></div>
+        </div>
+        <div class="ls-menu-item"><a href="">ВОПРОСЫ И ОТВЕТЫ</a></div>
+        <div class="ls-menu-item"><a href="">ПОЛЕЗНОЕ</a></div>
+        <div class="ls-menu-item"><a href="">КОНТАКТЫ</a></div>
+        <div class="ls-menu-item"><a href="">О КОМПАНИИ</a></div>
+      </div>
+    </div>
+    <div id="nav-wrap">
+      <div id="nav">
+        <form id="nav-search" method="post" name="search-form">
+          <input type="text" name="query" placeholder="Поиск по сайту">
+          <button></button>
+        </form>
+        <div id="nav-menu-wrap">
+          <div id="nav-menu">
+            <ul>
+              <li>
+                <div class="nav-el-wrapped">
+                  <div class="nav-menu-el"><a href="">Товары</a>
+                    <ul class="goods-list">
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Котлы и принадлежности</span></div></a></li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Водонагреватели</span></div></a>
+                        <ul class="goods-list-inner">
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Инновационная техника</span></div></a></li>
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Кондиционеры</span></div></a></li>
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Приборы учета газа и воды</span></div></a></li>
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Настенный газовый котел Protherm</span></div></a></li>
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Двухконтурные газовые котлы Vaillant</span></div></a></li>
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Баки для воды Aquatech</span></div></a></li>
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Напольные газовые котлы Vaillant</span></div></a></li>
+                          <li class="nav-goods-el"><a href="">
+                              <div class="goods-cat"><span>Панельные радиаторы Vaillant</span></div></a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Насосы GRUNDFOS</span></div></a></li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Насосы WILO</span></div></a></li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Радиаторы отопления </span><br><span>алюминиевые и биметалические</span></div></a></li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Расходные материалы </span><br><span>для монтажа</span></div></a></li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Расширительные баки</span></div></a></li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Электрические биде Panasonic</span></div></a></li>
+                      <li class="nav-goods-el"><a href="">
+                          <div class="goods-cat"><span>Электрообогреватели</span></div></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="nav-el-wrapped">
+                  <div class="nav-menu-el"><a href="">Оплата и доставка</a>
+                    <ul class="nav-submenu">
+                      <li><a href="">Помощь</a></li>
+                      <li><a href="">Условия оплаты</a></li>
+                      <li><a href="">Условия доставки</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="nav-el-wrapped">
+                  <div class="nav-menu-el"><a href="">Вопросы и ответы</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="nav-el-wrapped">
+                  <div class="nav-menu-el"><a href="">Полезное</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="nav-el-wrapped">
+                  <div class="nav-menu-el"><a href="">Контакты</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="nav-el-wrapped">
+                  <div class="nav-menu-el"><a href="">О компании</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="filters-wrap">
+      <div id="ls-crumbs-wrap">
+        <div id="ls-crumbs"><span><a href="./index.html">Главная</a></span><span class="seporator"> > </span><span><a href="">Товары</a></span><span class="seporator"> > </span><span><a href="">Радиаторы отопления алюминиевые и биметалические</a></span><span class="seporator"> > </span><span>Радиаторы Royal</span></div>
+        <div class="main-h">Радиаторы Royal</div>
+      </div>
+      <div id="ls-filters-open">ПОКАЗАТЬ ФИЛЬТРЫ</div>
+      <div id="filters">
+        <div id="specials">
+          <div class="filter-checkbox">
+            <input type="checkbox" name="new" id="foo1" hidden>
+            <label for="foo1" class="check-box"></label>
+            <div id="check-new">НОВИНКА</div>
+          </div>
+          <div class="filter-checkbox">
+            <input type="checkbox" name="hit" id="foo2" hidden>
+            <label for="foo2" class="check-box"></label>
+            <div id="check-hit">ХИТ ПРОДАЖ</div>
+          </div>
+          <div class="filter-checkbox">
+            <input type="checkbox" name="instock" id="foo3" hidden>
+            <label for="foo3" class="check-box"></label>
+            <div id="check-instock">В НАЛИЧИИ</div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Цена р.</div>
+            <div id="amount-sl" class="ov-hid">
+              <input type="text" placeholder="от" class="sl-w-input min-count">
+              <input type="text" placeholder="до" class="sl-w-input max-count">
+            </div>
+            <div class="range">
+              <div id="price-range" class="sl-range"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Материал           </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="alum" id="foo4" hidden>
+              <label for="foo4" class="check-box"></label>
+              <div class="material">алюминий</div>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="steel" id="foo5" hidden>
+              <label for="foo5" class="check-box"></label>
+              <div class="material">сталь</div>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="castiron" id="foo6" hidden>
+              <label for="foo6" class="check-box"></label>
+              <div class="material">чугун</div>
+            </div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Теплоотдача, ВТ</div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Ширина, мм.</div>
+            <div id="width-sl" class="ov-hid">
+              <input type="text" placeholder="от" class="sl-w-input min-count">
+              <input type="text" placeholder="до" class="sl-w-input max-count">
+            </div>
+            <div class="range">
+              <div id="width-range" class="sl-range"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Высота, мм.</div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Высота, мм.</div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Высота, мм.</div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Высота, мм.</div>
+          </div>
+        </div>
+        <div class="sl-widget-wrap">
+          <div class="sl-widget">
+            <div class="sl-w-arrow"></div>
+            <div class="sl-w-head">Высота, мм.</div>
+          </div>
+        </div>
+        <div id="sl-manipulate">
+          <div id="sl-reset">очистить</div>
+          <div id="sl-show">показать</div>
+        </div>
+      </div>
+      <div id="filtered">       
+        <div id="crumbs"><span><a href="./index.html">Главная</a></span><span class="seporator"> > </span><span><a href="">Товары</a></span><span class="seporator"> > </span><span><a href="">Радиаторы отопления алюминиевые и биметалические</a></span><span class="seporator"> > </span><span>Радиаторы Royal</span></div>
+        <div class="main-h">Радиаторы Royal</div>
+        <div id="sort">
+          <div id="sort-types">
+            <div id="sort-text">Сортировать:</div>
+            <div id="sort-types-wrap">
+              <div class="sort-type"><span>по цене</span>
+                <div class="sort-selection">
+                  <div class="sort-unchanged">
+                    <div class="increase"></div>
+                    <div class="decrease"></div>
+                  </div>
+                  <div data-type="decr" class="sort-changed"></div>
+                </div>
+              </div>
+              <div class="sort-type">по названию
+                <div class="sort-selection">
+                  <div class="sort-unchanged">
+                    <div class="increase"></div>
+                    <div class="decrease"></div>
+                  </div>
+                  <div class="sort-changed"></div>
+                </div>
+              </div>
+              <div class="sort-type">по популярности
+                <div class="sort-selection">
+                  <div class="sort-unchanged">
+                    <div class="increase"></div>
+                    <div class="decrease"></div>
+                  </div>
+                  <div class="sort-changed"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="compare-btn"><a href=""><span>сравнить</span><span id="compare-count">2</span></a></div>
+        </div>
+        <ul id="main-goods">
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="10" hidden>
+              <label for="10"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="11" hidden>
+              <label for="11"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="12" hidden>
+              <label for="12"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="13" hidden>
+              <label for="13"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="14" hidden>
+              <label for="14"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="15" hidden>
+              <label for="15"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="16" hidden>
+              <label for="16"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="17" hidden>
+              <label for="17"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+          <li class="main-goods">
+            <div class="goods-compare">
+              <input type="checkbox" name="name" id="18" hidden>
+              <label for="18"></label>
+              <div class="g-compare-text">сравнить</div>
+            </div>
+            <div class="goods-extra">
+              <div class="goods-new"><span>NEW</span></div>
+            </div><img src="images/goods/goods2.jpg" alt="Котел Vaillant" class="goods-m-img">
+            <div class="goods-m-name"><span>Радиатор Royal</span><br><span>Thermo PianoForte... </span></div>
+            <div class="goods-m-oldprice">288 194 р.</div>
+            <div class="goods-interface">
+              <div class="goods-price">138 194 р.</div>
+              <div class="goods-buy">купить</div>
+            </div>
+            <div class="goods-type-of-buy">
+              <div class="goods-buy-basket"><a href="">добавить в корзину</a></div>
+              <div class="goods-buy-1click"><a href="">купить в 1 клик</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="ab-pr-wrap">
+      <div id="ab-pr">
+        <p>Радиатор – это традиционный отопительный прибор, который используется для водяного отопления помещений любого типа наиболее часто. Другими словами, это классический вариант. Все радиаторы можно условно разделить на несколько групп в зависимости от используемого в их изготовлении материала. Это, в частности, алюминиевые радиаторы, отопительные приборы из стали, биметаллические и дизайнерские изделия. Это традиционный отопительный прибор, который используется для водяного отопления помещений любого типа наиболее часто. Другими словами, это классический вариант. Все радиаторы можно условно разделить на несколько групп в зависимости от используемого в их изготовлении материала.</p>
+      </div>
+    </div>
+    <div id="footer-wrap">
+      <div id="footer">
+        <div id="footer-left">
+          <ul class="footer-menu">
+            <li><a href="">Компания</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li><a href="">Информация</a></li>
+            <li><a href="">Оплата</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Партнеры</a></li>
+            <li><a href="">Вопросы и ответы</a></li>
+            <li><a href="">Полезно</a></li>
+          </ul>
+        </div>
+        <div id="footer-center">
+          <form id="footer-search" method="post" name="search-form">
+            <input type="text" name="query" placeholder="Поиск по сайту">
+            <button></button>
+          </form>
+          <div class="basket">
+            <div class="basket-ico"></div>
+            <div class="basket-inf">
+              <p><a href="">Корзина:</a><span class="basket-items-amount"> 2</span></p>
+              <p><a href="">Сумма:</a><span class="basket-sum"> 4500 р.</span></p>
+            </div>
+          </div>
+        </div>
+        <div id="footer-right">
+          <div class="head-number"><span>(8452) </span><span>988-996</span></div>
+          <div class="cb-head"><a href="">Обратный звонок</a></div>
+          <div class="head-number"><span>(8452) </span><span>69-44-22</span></div>
+          <div class="service-head"><a href="">Сервис</a></div>
+        </div>
+        <div id="footer-bottom">
+          <div id="copyrights"><span>Copyright © 2015 ООО «Инвест-Проект»</span><br><span>Центр продаж и обслуживания инженерных систем</span></div>
+          <div id="counters">
+            <div class="counter"></div>
+            <div class="counter"></div>
+          </div>
+          <div id="powered-by"><a href="">
+              <div id="cherry-logo"></div>
+              <div id="cherry-text"><span>Создание сайта</span><br><span>Дизайн-студия Сherry</span></div></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

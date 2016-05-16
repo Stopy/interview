@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/calendar.js"></script>
+</head>
+<body>
+	<div class="modal-wrap">
+		<div class="modal-window">
+			<div class="modal-exit"></div>
+			<div class="modal-line">
+				<div class="modal-club-name">Боулинг клуб в ТК «Сенная»</div>
+				<div class="modal-about-club">СПб, м. Сенная, Садовая, Спасская,<br>ул. Ефимова, д. 3, Тел.: 8-921-564-56-56</div>
+			</div>
+			<div class="club-seporator"></div>
+			<div class="modal-line">
+				<p>ДОРОЖКА:</p>
+				<div class="modal-balls">	</div>
+			</div>			
+			<div class="club-seporator"></div>
+			<div class="modal-line">
+				<p>ЦЕНА:</p>
+				<div class="modal-tarifs">Стандартный тариф — 1920 руб., <span>VIP-тариф — 2600 руб.</span></div>
+			</div>			
+			<div class="club-seporator"></div>
+			<div class="modal-line">
+				<div>
+					<p>ДАТА:</p>
+					<div class="modal-date-count">23.03 (в ночь на 24.03)</div>
+				</div>
+			</div>
+			<div class="modal-line">
+				<div>
+					<p>ВРЕМЯ:</p>
+					<div class="modal-time-count">
+						<div class="modal-time-select">
+							<div class="modal-time-arrow"></div>
+							<div class="changed-time">14:00</div>
+							<div class="other-options">
+								<div class="time-option">11:00</div>
+								<div class="time-option">12:00</div>
+								<div class="time-option">13:00</div>
+								<div class="time-option">14:00</div>
+								<div class="time-option">15:00</div>
+								<div class="time-option">16:00</div>
+							</div>
+						</div>
+						<div class="modal-time-select">
+							<div class="modal-time-arrow"></div>
+							<div class="changed-time">16:00</div>
+							<div class="other-options">
+								<div class="time-option">11:00</div>
+								<div class="time-option">12:00</div>
+								<div class="time-option">13:00</div>
+								<div class="time-option">14:00</div>
+								<div class="time-option">15:00</div>
+								<div class="time-option">16:00</div>
+							</div>
+						</div>
+					</div>
+					<div class="time-of-game">ВРЕМЯ ИГРЫ — <span>2 ч 30 м</span></div>
+				</div>
+			</div>
+			<div class="club-seporator"></div>
+			<div class="modal-form">
+				<p>Для бронирования необходимо ввести имя и номер телефона</p>
+				<form action="" method="post">
+					<div class="modal-inputs">
+						<div><span>ВАШЕ ИМЯ</span></div>
+						<div><span>ВАШ НОМЕР ТЕЛЕФОНА</span></div>
+						<div><input type="text" name="name" maxlength="30"></div>
+						<div><input type="tel" name="tel" maxlength="30"></div>
+					</div>
+				</form>
+			</div>
+			<div class="club-seporator"></div>
+			<div class="modal-send">
+				<div><button class="modal-cancel">ОТМЕНИТЬ</button></div>
+				<div><button class="modal-accept">ЗАБРОНИРОВАТЬ</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<h2>Система бронирования боулинга  |  Тел.: +7 812 380-3005</h2>
+	</div>	
+	<div class="main">
+		<div class="ui-head-box">
+			<div class="ui-head-col">
+				<div class="clock-wrap">
+					<div class="clock">
+						<div id="min"><span></span></div>
+						<div id="hour"><span></span></div>
+						<div id="sec"><span></span></div>
+					</div>
+					<div id="time"></div>
+				</div>
+				<div class="club-select-wrap">
+					<div class="club-select">
+						<div class="club-selected">ВСЕ КЛУБЫ СЕТИ</div>
+						<div class="club-arrow"></div>
+					</div>
+					<div class="club-select-open">
+						<div class="club-close"></div>
+						<div class="club-select-open-head">ВСЕ КЛУБЫ СЕТИ</div>
+						<div class="club-inf">
+							<div class="club-name">Боулинг клуб в ТК «Сенная»</div>
+							<div class="club-other-inf">
+								<p>СПб, м. Сенная, Садовая, Спасская, ул. Ефимова, д. 3,</p>
+								<p>Тел.: 8-921-564-56-56</p>
+								<p><span><span>10 дорожек.</span> Цена дорожки<span>от 500 руб./час</span></span></p>
+							</div>
+						</div>
+						<div class="club-seporator"></div>
+						<div class="club-inf">
+							<div class="club-name">Боулинг клуб в ТК «Сенная»</div>
+							<div class="club-other-inf">
+								<p>СПб, м. Сенная, Садовая, Спасская, ул. Ефимова, д. 3,</p>
+								<p>Тел.: 8-921-564-56-56</p>
+								<p><span><span>10 дорожек.</span> Цена дорожки<span>от 500 руб./час</span></span></p>
+							</div>
+						</div>
+						<div class="club-seporator"></div>
+						<div class="club-inf">
+							<div class="club-name">Боулинг клуб в ТК «Сенная»</div>
+							<div class="club-other-inf">
+								<p>СПб, м. Сенная, Садовая, Спасская, ул. Ефимова, д. 3,</p>
+								<p>Тел.: 8-921-564-56-56</p>
+								<p><span><span>10 дорожек.</span> Цена дорожки<span>от 500 руб./час</span></span></p>
+							</div>
+						</div>
+						<div class="club-seporator"></div>
+					</div>
+				</div>
+			</div>
+			<div class="ui-head-col">
+				<div id="calendar-wrap">
+					<table id="calendar2">
+						<thead>
+							<tr><td>‹<td colspan="5"><td>›
+							<tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+						<tbody>
+					</table>
+				</div>
+			</div>
+			<div class="ui-head-col">
+				<div class="legend-wrap">
+					<div class="legend-line">Дорожка с детскими бортиком</div>
+					<div class="legend-line">Ваше время бронирования</div>
+					<div class="legend-line">Свободное время</div>
+					<div class="legend-line">Дорожка забронирована</div>
+				</div>
+			</div>
+			<div class="ui-head-col">
+				<form action="" method="get" class="search">
+					<input type="text" placeholder="ПОИСК БРОНИ ПО НОМЕРУ ТЕЛ.">
+					<button class="search-button"></button>
+				</form>
+			</div>
+		</div>
+		<div class="club-inf">
+			<div class="club-name">Боулинг клуб в ТК «Сенная»</div>
+			<div class="club-other-inf">
+				<p>СПб, м. Сенная, Садовая, Спасская, ул. Ефимова, д. 3,</p>
+				<p>Тел.: 8-921-564-56-56</p>
+				<p><span>Цена дорожки от 500 руб./час</span></p>
+			</div>
+		</div>
+		<div class="club-wrap">
+			<ul class="club-timing">
+				<li><span>10</span></li>
+				<li><span>11</span></li>
+				<li><span>12</span></li>
+				<li><span>13</span></li>
+				<li><span>14</span></li>
+				<li><span>15</span></li>
+				<li><span>16</span></li>
+				<li><span>17</span></li>
+				<li><span>18</span></li>
+				<li><span>19</span></li>
+				<li><span>20</span></li>
+				<li><span>21</span></li>
+				<li><span>22</span></li>
+				<li><span>23</span></li>
+				<li><span>00</span></li>
+				<li><span>01</span></li>
+				<li><span>02</span></li>
+				<li><span>03</span></li>
+				<li><span>04</span></li>
+				<li><span>05</span></li>
+				<li><span>06</span></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">1</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">2</div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">3</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">4</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">5</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="blocked-track">6</div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+		</div>
+		<div class="club-inf">
+			<div class="club-name">Боулинг клуб в ТК «Сенная»</div>
+			<div class="club-other-inf">
+				<p>СПб, м. Сенная, Садовая, Спасская, ул. Ефимова, д. 3,</p>
+				<p>Тел.: 8-921-564-56-56</p>
+				<p><span>Цена дорожки от 500 руб./час</span></p>
+			</div>
+		</div>
+		<div class="club-wrap">
+			<ul class="club-timing">
+				<li><span>10</span></li>
+				<li><span>11</span></li>
+				<li><span>12</span></li>
+				<li><span>13</span></li>
+				<li><span>14</span></li>
+				<li><span>15</span></li>
+				<li><span>16</span></li>
+				<li><span>17</span></li>
+				<li><span>18</span></li>
+				<li><span>19</span></li>
+				<li><span>20</span></li>
+				<li><span>21</span></li>
+				<li><span>22</span></li>
+				<li><span>23</span></li>
+				<li><span>00</span></li>
+				<li><span>01</span></li>
+				<li><span>02</span></li>
+				<li><span>03</span></li>
+				<li><span>04</span></li>
+				<li><span>05</span></li>
+				<li><span>06</span></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">1</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">2</div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">3</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">4</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="number-of-track">5</div>
+				<div class="kids-allowed"></div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+			<ul class="track">
+				<div class="blocked-track">6</div>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="red-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+				<li><div class="hour-top"></div><div class="hour-bottom"></div><div class="green-hour"></div></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
