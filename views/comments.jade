@@ -1,0 +1,55 @@
+-if (!data[0]){ // Если у поста нет комментариев
+  -if (ses.login) {
+
+    .com-author Пусто, оставьте комментарий!
+    form(method='post', action="/new_comment", class="new-c-form")
+      textarea(type="text", name="text" placeholder="Комментарий...")
+      input(type="hidden", name="post_id", value="#{other.post_id}")
+      input(type="hidden", name="parent", value="0")
+      button.new_comment Отправить
+
+  -} else {
+    .com-author Зарегистрируйтесь чтобы оставлять комментарии!
+  -}
+-} else { // Если есть
+  -if (ses.login) { // Если человек авторизовался
+
+    span.write-com Оставить комментарий: 
+    form(method='post', action="/new_comment", class="new-c-form")
+      textarea(type="text", name="text" placeholder="Комментарий...")
+      input(type="hidden", name="post_id", value="#{other.post_id}")
+      input(type="hidden", name="parent", value="0")
+      button.new_comment Отправить
+
+  -} else { // Если нет
+
+    .com-author(style="text-align: center; padding-bottom: 5px;") Зарегистрируйтесь чтобы оставлять комментарии!
+
+  -}
+
+  - //  Функция вывода, принимает массив родителей с ссылками на детей
+  -function output(ar){
+    -for (var i = 0; i < ar.length; i++) {
+      - var margin;
+      - (ar[i].parent) ? margin = ar[i].margin*20+'px' : margin = '0px'; // Отступ
+      .comment(data-id="#{ar[i].id}", style="margin-left: #{margin}")
+        -var user = (usersObj[data[i].author]) ? usersObj[data[i].author].login : 'Deleted'
+        .com-author
+          span=user
+        .com-text
+          span=ar[i].text
+
+        -var hour = ar[i].time.getHours().toString();                
+        -var minutes = ar[i].time.getMinutes().toString();
+        -if(hour.length < 2) hour = '0'+hour
+        -if(minutes.length < 2) minutes = '0'+minutes 
+             
+        .com-time=ar[i].time.getDate()+'/'+(ar[i].time.getMonth()+1)+'/'+ar[i].time.getFullYear()+' - '+hour+':'+minutes
+        .com-info
+          .reply(data-replyto="#{ar[i].author}") Ответить      
+      -if (ar[i].children) { output(ar[i].children); }
+    -}
+
+  -}
+  -output(data);
+-}

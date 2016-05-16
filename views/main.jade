@@ -1,0 +1,75 @@
+include ./header.jade
+main
+  #np-modal_wrap
+    #np-modal_box
+      #np-modal_exit X
+      h2 Новый пост:
+      #np-wrapped
+        #np-tags-wrap
+          #new-tag
+            form
+              input(type="text", placeholder="Добавить тег")
+              button +
+          #added-tags
+        textarea#np-body
+        #np-downloaded
+          #np-down-btns
+            #np-btns-open Загрузить изображение
+            label(for="file", id="np-imageDown" class="down-hidden")
+            form(id="imgForm", action="/file/upload", method="post")
+              input(type="file", name="file", id="file")
+              input(type="hidden", name="MAX_FILE_SIZE", value="3250585")
+            form(id="imgUrl", action="/file/url", method="post" class="down-hidden")
+              button(id="imgUrlSub")
+              input(type="text", name="file_url", id="file_url")
+          ul#np-image-list
+        #np-send-wrap
+          button#np-send Send
+  #new-post-line
+    -if (ses.auth) {
+    button#new-post Новый пост +
+    -} else {
+    p#need-auth Авторизуйтесь, чтобы создавать посты!
+    -}
+    form(id="tag-search-form")
+      input(type="text" id="tag-search" name="tag-search" placeholder="Поиск по тегу")
+      button ok
+  #posts
+    -if (!data[0])
+      h1 Нету постов по этому тегу
+      br
+    -else
+      - for (var i = 0; i < data.length; i++){
+        .post(data-id="#{data[i].id}")
+          .p-author
+            -var user = (users[data[i].author]) ? users[data[i].author].login : 'Deleted'
+            span= user
+          .p-tags
+            -for (var k = 0, length = data[i].tags.length; k < length; k++) {
+            a.tag(href="/tag/#{data[i].tags[k]}/1")= data[i].tags[k]
+            -}
+          .p-cont
+            span= data[i].cont
+          .p-time
+            -var hour = data[i].time.getHours().toString();                
+            -var minutes = data[i].time.getMinutes().toString();
+            -if(hour.length < 2) hour = '0'+hour
+            -if(minutes.length < 2) minutes = '0'+minutes
+            span= data[i].time.getDate()+'/'+(data[i].time.getMonth()+1)+'/'+data[i].time.getFullYear()+' - '+hour+':'+minutes
+          .comment-button Комментарии (#{data[i].comments_count})
+          a(href="/post/#{data[i].id}").post-link Перейти к посту
+          .rating
+            div.minus.rate-button(data-rating="-1") -
+            - var rate = data[i].pluses.length - data[i].minuses.length;
+            div.post-rating= rate
+            div.plus.rate-button(data-rating="1") +
+          .comments
+      -}
+  p
+    -pageArray.forEach(function(item) {
+    -  if (item != page) {
+        a(href="./#{item}").pageSwitcher=item
+    -  } else {
+        span.pageSwitcher=item
+    -  }
+    -});

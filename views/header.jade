@@ -1,0 +1,20 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Title
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:400,700")
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+    script(src='/js/jquery.form.upload.js')
+    script(src='/js/scripts.js')
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      a(href="/", id="home") Главная
+      #user-box
+        - if (ses.auth) {
+        a(href="/user/#{ses.login}")= ses.login
+        a(href="/logout") Выйти
+        -} else {
+        a(href="/login") Вход
+        a(href="/registration") Регистрация
+        -}

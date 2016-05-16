@@ -1,0 +1,35 @@
+include ./header.jade
+main
+  #np-modal_wrap
+    #np-modal_box
+      #np-modal_exit X
+      h2 Новый пост:
+      #np-wrapped
+        #np-tags-wrap
+          #new-tag
+            form
+              input(type="text", placeholder="Добавить тег")
+              button +
+          #added-tags
+        textarea#np-body
+        #np-downloaded
+          #np-down-btns
+            #np-btns-open Загрузить изображение
+            label(for="file", id="np-imageDown" class="down-hidden")
+            form(id="imgForm", action="/file/upload", method="post")
+              input(type="file", name="file", id="file")
+              input(type="hidden", name="MAX_FILE_SIZE", value="3250585")
+            form(id="imgUrl", action="/file/url", method="post" class="down-hidden")
+              button(id="imgUrlSub")
+              input(type="text", name="file_url", id="file_url")
+          ul#np-image-list
+        #np-send-wrap
+          button#np-send Send
+  #new-post-line
+    -if (ses.auth) {
+    button#new-post Новый пост +
+    -} else {
+    p#need-auth Авторизуйтесь, чтобы создавать посты!
+    -}
+  #posts
+    h1(style="text-align:center;") 404 not found

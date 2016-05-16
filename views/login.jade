@@ -1,0 +1,12 @@
+include ./header.jade
+main
+  -if (err) {
+  h2=err
+  -}
+
+  #registration
+    form(method="post", action="/login")
+      input(type="text", name="login", placeholder="Ваш логин")
+      input(type="password", name="password", placeholder="Ваш пароль")
+      input(type="submit", value="Войти")
+  #r-col

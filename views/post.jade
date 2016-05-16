@@ -1,0 +1,25 @@
+include ./header.jade
+main
+  .post(data-id="#{post.data.id}")
+    .p-author
+      -var author = (post.user) ? post.user.login : 'Deleted'
+      span= author
+    .p-tags
+      -for (var k = 0; k < post.data.tags.length; k++) {
+      a.tag(href="/tag/#{post.data.tags[k]}/1")= post.data.tags[k]
+      -}
+    .p-cont
+      span= post.data.cont
+    .p-time
+      -var hour = post.data.time.getHours().toString();                
+      -var minutes = post.data.time.getMinutes().toString();
+      -if(hour.length < 2) hour = '0'+hour
+      -if(minutes.length < 2) minutes = '0'+minutes
+      span= post.data.time.getDate()+'/'+(post.data.time.getMonth()+1)+'/'+post.data.time.getFullYear()+' - '+hour+':'+minutes
+    .rating
+      div.minus.rate-button(data-rating="-1") -
+      - var rate = post.data.pluses.length - post.data.minuses.length;
+      div.post-rating= rate
+      div.plus.rate-button(data-rating="1") +
+    .comments
+      include ./comments.jade
